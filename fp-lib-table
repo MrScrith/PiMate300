@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name "eMate 300 Pi")(type KiCad)(uri "${KIPRJMOD}/eMate 300 Pi.pretty")(options "")(descr ""))
+)
