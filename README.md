@@ -19,4 +19,4 @@ At the moment the following items will need to be modified/removed from the case
 | [Quartus II](https://fpgasoftware.intel.com/13.0sp1/?edition=subscription) | v13.0 SP 1 | Programming of FPGA for display |
 
 # Eventually this will be sold as an almost-drop-in kit, at least that is the hope.
-Price and availability is unknown at this early stage, though given the amount of PCBs and the 3D printing needed, estimating a range of $300 to $500.
+
