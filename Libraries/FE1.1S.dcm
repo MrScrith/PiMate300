@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP FE1.1S
+D USB 2.0 HIGH SPEED 4-PORT HUB CONTROLLER
+K
+F https://cdn-shop.adafruit.com/product-files/2991/FE1.1s+Data+Sheet+(Rev.+1.0).pdf
+$ENDCMP
+#
+#End Doc Library
