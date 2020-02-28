@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP TPS62056DGSR
+D 3.3-V Output, 800-mA, 10V Vin, 95% Efficient Step-Down Converter in MSOP-10
+K
+F http://www.ti.com/lit/gpn/TPS62056
+$ENDCMP
+#
+#End Doc Library

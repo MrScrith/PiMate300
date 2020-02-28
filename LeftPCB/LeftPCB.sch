@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 2
+Sheet 1 3
 Title ""
 Date ""
 Rev ""
@@ -490,7 +490,7 @@ Wire Wire Line
 Wire Wire Line
 	6350 1350 6150 1350
 $Sheet
-S 7750 1000 850  2650
+S 8050 1000 850  2650
 U 5F1B6B4F
 F0 "LeftPCB_PWR" 50
 F1 "LeftPCB_PWR.sch" 50
