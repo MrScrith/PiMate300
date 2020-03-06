@@ -1,3 +1,7 @@
 (fp_lib_table
-  (lib (name FE1.1S)(type Legacy)(uri C:/Users/erekedah/Documents/Personal/Projects/PiMate300/Libraries/FE1.1S.mod)(options "")(descr ""))
+  (lib (name BQ40Z60RHBT)(type Legacy)(uri C:/Users/erekedah/Documents/Personal/Projects/PiMate300/Libraries/bat_charge/BQ40Z60RHBT.mod)(options "")(descr ""))
+  (lib (name TPS62056DGSR)(type Legacy)(uri C:/Users/erekedah/Documents/Personal/Projects/PiMate300/Libraries/ti_3v3_reg/TPS62056DGSR.mod)(options "")(descr ""))
+  (lib (name FE1.1S)(type Legacy)(uri C:/Users/erekedah/Documents/Personal/Projects/PiMate300/Libraries/4port_usb_hub/FE1.1S.mod)(options "")(descr ""))
+  (lib (name TPS565208DDCR)(type Legacy)(uri C:/Users/erekedah/Documents/Personal/Projects/PiMate300/Libraries/ti_5v_reg/TPS565208DDCR.mod)(options "")(descr ""))
+  (lib (name MSP430F5508IRGCR)(type Legacy)(uri C:/Users/erekedah/Documents/Personal/Projects/PiMate300/Libraries/msp430/MSP430F5508IRGCR.mod)(options "")(descr ""))
 )

@@ -2,4 +2,5 @@
   (lib (name FE1.1s)(type Legacy)(uri C:/Users/erekedah/Documents/Personal/Projects/PiMate300/Libraries/4port_usb_hub/FE1.1S.lib)(options "")(descr ""))
   (lib (name TPS56637RPAR)(type Legacy)(uri C:/Users/erekedah/Documents/Personal/Projects/PiMate300/Libraries/ti_12v_reg/TPS56637RPAR.lib)(options "")(descr ""))
   (lib (name TPS62056DGSR)(type Legacy)(uri C:/Users/erekedah/Documents/Personal/Projects/PiMate300/Libraries/ti_3v3_reg/TPS62056DGSR.lib)(options "")(descr ""))
+  (lib (name BQ40Z60)(type Legacy)(uri C:/Users/erekedah/Documents/Personal/Projects/PiMate300/Libraries/bat_charge/BQ40Z60RHBT.lib)(options "")(descr ""))
 )

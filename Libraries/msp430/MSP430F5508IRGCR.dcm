@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP MSP430F5508IRGCR
+D MIXED SIGNAL MICROCONTROLLER
+K
+F http://www.ti.com/lit/gpn/msp430f5508
+$ENDCMP
+#
+#End Doc Library

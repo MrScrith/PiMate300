@@ -247,7 +247,7 @@ AR Path="/5E591DB3" Ref="U?"  Part="1"
 AR Path="/5E588070/5E591DB3" Ref="U2"  Part="1" 
 F 0 "U2" H 4900 4500 50  0000 C CNN
 F 1 "MSP430F5508IRGZ" H 5200 4600 50  0000 C CNN
-F 2 "Housings_DFN_QFN:QFN-28-1EP_5x5mm_Pitch0.5mm" H 3500 4650 50  0001 C CIN
+F 2 "MSP430F5508IRGCR:QFN50P900X900X100-65N" H 3500 4650 50  0001 C CIN
 F 3 "http://www.ti.com/lit/ds/symlink/msp430f5508.pdf" H 4400 5800 50  0001 C CNN
 	1    4350 5800
 	1    0    0    -1  
@@ -1342,17 +1342,6 @@ Wire Wire Line
 Wire Wire Line
 	9650 1600 9750 1600
 $Comp
-L Device:LED_Small D1
-U 1 1 5EB27187
-P 10250 1600
-F 0 "D1" H 10100 1550 50  0000 L CNN
-F 1 "PORT3" H 10300 1550 50  0000 L CNN
-F 2 "LEDs:LED_0805" V 10250 1600 50  0001 C CNN
-F 3 "~" V 10250 1600 50  0001 C CNN
-	1    10250 1600
-	-1   0    0    1   
-$EndComp
-$Comp
 L Device:LED_Small D2
 U 1 1 5EB28765
 P 10250 1750
@@ -1362,17 +1351,6 @@ F 2 "LEDs:LED_0805" V 10250 1750 50  0001 C CNN
 F 3 "~" V 10250 1750 50  0001 C CNN
 	1    10250 1750
 	1    0    0    -1  
-$EndComp
-$Comp
-L Device:LED_Small D4
-U 1 1 5EB28C27
-P 10250 1850
-F 0 "D4" H 10100 1800 50  0000 L CNN
-F 1 "PORT4" H 10300 1800 50  0000 L CNN
-F 2 "LEDs:LED_0805" V 10250 1850 50  0001 C CNN
-F 3 "~" V 10250 1850 50  0001 C CNN
-	1    10250 1850
-	-1   0    0    1   
 $EndComp
 $Comp
 L Device:LED_Small D5
@@ -1397,17 +1375,6 @@ F 3 "~" V 11100 1750 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_Small_US R12
-U 1 1 5EB29CA9
-P 10550 1600
-F 0 "R12" V 10500 1500 50  0000 C CNN
-F 1 "330" V 10500 1700 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" H 10550 1600 50  0001 C CNN
-F 3 "~" H 10550 1600 50  0001 C CNN
-	1    10550 1600
-	0    1    1    0   
-$EndComp
-$Comp
 L Device:R_Small_US R13
 U 1 1 5EB2A0BD
 P 10550 1750
@@ -1416,17 +1383,6 @@ F 1 "330" V 10500 1850 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" H 10550 1750 50  0001 C CNN
 F 3 "~" H 10550 1750 50  0001 C CNN
 	1    10550 1750
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_Small_US R15
-U 1 1 5EB2A2F4
-P 10550 1850
-F 0 "R15" V 10500 1750 50  0000 C CNN
-F 1 "330" V 10500 1950 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" H 10550 1850 50  0001 C CNN
-F 3 "~" H 10550 1850 50  0001 C CNN
-	1    10550 1850
 	0    1    1    0   
 $EndComp
 $Comp
@@ -1779,31 +1735,17 @@ Wire Wire Line
 Wire Wire Line
 	10050 1900 10050 1750
 Wire Wire Line
-	10050 1600 10150 1600
-Wire Wire Line
 	9650 1900 10050 1900
 Wire Wire Line
 	10150 1750 10050 1750
-Connection ~ 10050 1750
-Wire Wire Line
-	10050 1750 10050 1600
-Wire Wire Line
-	10350 1600 10450 1600
 Wire Wire Line
 	10450 1750 10350 1750
 Wire Wire Line
 	9650 2000 10150 2000
-Connection ~ 10150 2000
-Wire Wire Line
-	10150 1850 10150 2000
-Wire Wire Line
-	10350 1850 10450 1850
 Wire Wire Line
 	10450 2000 10350 2000
 Wire Wire Line
 	10750 2100 10750 2000
-Wire Wire Line
-	10750 1600 10650 1600
 Wire Wire Line
 	9650 2100 10750 2100
 Wire Wire Line
@@ -1812,20 +1754,12 @@ Connection ~ 10750 1750
 Wire Wire Line
 	10750 1750 10750 1600
 Wire Wire Line
-	10650 1850 10750 1850
-Connection ~ 10750 1850
-Wire Wire Line
-	10750 1850 10750 1750
-Wire Wire Line
 	10650 2000 10750 2000
 Connection ~ 10750 2000
-Wire Wire Line
-	10750 2000 10750 1850
 Wire Wire Line
 	11100 1650 11100 1600
 Wire Wire Line
 	11100 1600 10750 1600
-Connection ~ 10750 1600
 Wire Wire Line
 	11100 1850 11100 1950
 Wire Wire Line
@@ -1840,4 +1774,39 @@ Text GLabel 3000 6100 0    50   Input ~ 0
 KBD_EN
 Wire Wire Line
 	3200 6100 3000 6100
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5EFBD3B6
+P 5400 2200
+F 0 "H1" H 5500 2246 50  0000 L CNN
+F 1 "MountingHole" H 5500 2155 50  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_2.7mm" H 5400 2200 50  0001 C CNN
+F 3 "~" H 5400 2200 50  0001 C CNN
+	1    5400 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5EFBD795
+P 5450 2600
+F 0 "H2" H 5550 2646 50  0000 L CNN
+F 1 "MountingHole" H 5550 2555 50  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_2.7mm" H 5450 2600 50  0001 C CNN
+F 3 "~" H 5450 2600 50  0001 C CNN
+	1    5450 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5EFF6A88
+P 5450 2900
+F 0 "H3" H 5550 2946 50  0000 L CNN
+F 1 "MountingHole" H 5550 2855 50  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_2.7mm" H 5450 2900 50  0001 C CNN
+F 3 "~" H 5450 2900 50  0001 C CNN
+	1    5450 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10750 1750 10750 2000
 $EndSCHEMATC
