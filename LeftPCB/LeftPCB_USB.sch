@@ -95,7 +95,7 @@ Wire Wire Line
 	1800 4350 1600 4350
 Wire Wire Line
 	1600 4450 1800 4450
-Text GLabel 3000 5800 0    50   BiDi ~ 0
+Text GLabel 3000 6000 0    50   BiDi ~ 0
 BRIGHTNESS
 Text GLabel 3000 5900 0    50   BiDi ~ 0
 CONTRAST
@@ -194,9 +194,9 @@ F 3 "~" H 6650 1150 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	6300 800  6550 800 
+	6300 800  6350 800 
 Wire Wire Line
-	6550 1150 6300 1150
+	6550 1150 6350 1150
 Wire Wire Line
 	6750 800  6950 800 
 Wire Wire Line
@@ -247,7 +247,7 @@ AR Path="/5E591DB3" Ref="U?"  Part="1"
 AR Path="/5E588070/5E591DB3" Ref="U2"  Part="1" 
 F 0 "U2" H 4900 4500 50  0000 C CNN
 F 1 "MSP430F5508IRGZ" H 5200 4600 50  0000 C CNN
-F 2 "MSP430F5508IRGCR:QFN50P900X900X100-65N" H 3500 4650 50  0001 C CIN
+F 2 "Housings_QFP:LQFP-48_7x7mm_Pitch0.5mm" H 3500 4650 50  0001 C CIN
 F 3 "http://www.ti.com/lit/ds/symlink/msp430f5508.pdf" H 4400 5800 50  0001 C CNN
 	1    4350 5800
 	1    0    0    -1  
@@ -384,39 +384,33 @@ Wire Wire Line
 Wire Wire Line
 	3000 5900 3200 5900
 Wire Wire Line
-	3200 5800 3000 5800
-Wire Wire Line
 	4350 4350 4350 4550
-Text GLabel 5800 6100 2    50   BiDi ~ 0
+Text GLabel 5800 5500 2    50   BiDi ~ 0
 KBD_ROW_0
-Text GLabel 5800 6200 2    50   BiDi ~ 0
+Text GLabel 5800 5600 2    50   BiDi ~ 0
 KBD_ROW_1
-Text GLabel 5800 6300 2    50   BiDi ~ 0
+Text GLabel 5800 5700 2    50   BiDi ~ 0
 KBD_ROW_2
-Text GLabel 5800 6400 2    50   BiDi ~ 0
+Text GLabel 3200 4950 0    50   BiDi ~ 0
 KBD_ROW_3
-Text GLabel 5800 6500 2    50   BiDi ~ 0
+Text GLabel 3200 5150 0    50   BiDi ~ 0
 KBD_ROW_4
-Text GLabel 5800 6600 2    50   BiDi ~ 0
+Text GLabel 5800 6100 2    50   BiDi ~ 0
 KBD_ROW_5
-Text GLabel 5800 6700 2    50   BiDi ~ 0
+Text GLabel 5800 6300 2    50   BiDi ~ 0
 KBD_ROW_6
-Text GLabel 5800 6800 2    50   BiDi ~ 0
+Text GLabel 5800 6500 2    50   BiDi ~ 0
 KBD_ROW_7
-Text GLabel 5800 5000 2    50   BiDi ~ 0
+Text GLabel 3200 5050 0    50   BiDi ~ 0
 KBD_COL_SEL_0
-Text GLabel 5800 5100 2    50   BiDi ~ 0
+Text GLabel 5800 5900 2    50   BiDi ~ 0
 KBD_COL_SEL_1
-Text GLabel 5800 5200 2    50   BiDi ~ 0
+Text GLabel 5800 6200 2    50   BiDi ~ 0
 KBD_COL_SEL_2
-Text GLabel 5800 5300 2    50   BiDi ~ 0
+Text GLabel 3200 5250 0    50   BiDi ~ 0
 KBD_COL_SEL_3
-Text GLabel 5800 5400 2    50   BiDi ~ 0
+Text GLabel 5800 6400 2    50   BiDi ~ 0
 KBD_COL_VAL
-Wire Wire Line
-	5600 5000 5800 5000
-Wire Wire Line
-	5800 5100 5600 5100
 Wire Wire Line
 	5600 5200 5800 5200
 Wire Wire Line
@@ -433,12 +427,6 @@ Wire Wire Line
 	5600 6400 5800 6400
 Wire Wire Line
 	5800 6500 5600 6500
-Wire Wire Line
-	5600 6600 5800 6600
-Wire Wire Line
-	5800 6700 5600 6700
-Wire Wire Line
-	5600 6800 5800 6800
 Wire Wire Line
 	4100 7050 4100 7200
 $Comp
@@ -723,7 +711,7 @@ Text GLabel 1800 4600 2    50   BiDi ~ 0
 SYS_PWR_EN
 Wire Wire Line
 	1800 4600 1600 4600
-Text GLabel 5800 5900 2    50   BiDi ~ 0
+Text GLabel 5800 5400 2    50   BiDi ~ 0
 SYS_PWR_EN
 Wire Wire Line
 	5800 5900 5600 5900
@@ -782,37 +770,18 @@ F 3 "" H 3900 4150 50  0001 C CNN
 	1    3900 4150
 	1    0    0    -1  
 $EndComp
-Text HLabel 1600 2300 0    50   Input ~ 0
-VBAT
-Text GLabel 1800 2300 2    50   Input ~ 0
-VBAT
-Wire Wire Line
-	1600 2300 1800 2300
-Text GLabel 2650 6000 0    50   Input ~ 0
-VBAT
 Wire Wire Line
 	3000 6000 3200 6000
 $Comp
-L Device:R_Small_US R27
-U 1 1 5E78162E
-P 2900 6000
-F 0 "R27" V 2850 5900 50  0000 C CNN
-F 1 "1M" V 2850 6100 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" H 2900 6000 50  0001 C CNN
-F 3 "~" H 2900 6000 50  0001 C CNN
-	1    2900 6000
-	0    1    1    0   
-$EndComp
-$Comp
 L Device:LED_Small D6
 U 1 1 5E793D3F
-P 2700 4700
-F 0 "D6" H 2550 4650 50  0000 L CNN
-F 1 "HeartBeat" H 2750 4650 50  0000 L CNN
-F 2 "LEDs:LED_0805" V 2700 4700 50  0001 C CNN
-F 3 "~" V 2700 4700 50  0001 C CNN
-	1    2700 4700
-	0    1    1    0   
+P 6500 7200
+F 0 "D6" H 6350 7150 50  0000 L CNN
+F 1 "HeartBeat" H 6550 7150 50  0000 L CNN
+F 2 "LEDs:LED_0805" V 6500 7200 50  0001 C CNN
+F 3 "~" V 6500 7200 50  0001 C CNN
+	1    6500 7200
+	0    -1   -1   0   
 $EndComp
 Wire Wire Line
 	2600 5400 3200 5400
@@ -824,93 +793,58 @@ Connection ~ 2600 5400
 $Comp
 L Device:R_Small_US R18
 U 1 1 5E79F380
-P 2700 4350
-F 0 "R18" V 2650 4250 50  0000 C CNN
-F 1 "2k" V 2650 4450 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" H 2700 4350 50  0001 C CNN
-F 3 "~" H 2700 4350 50  0001 C CNN
-	1    2700 4350
+P 6500 7550
+F 0 "R18" V 6450 7450 50  0000 C CNN
+F 1 "2k" V 6450 7650 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" H 6500 7550 50  0001 C CNN
+F 3 "~" H 6500 7550 50  0001 C CNN
+	1    6500 7550
 	-1   0    0    1   
 $EndComp
 $Comp
 L Device:LED_Small D7
 U 1 1 5E7B9E30
-P 2800 4700
-F 0 "D7" H 2650 4650 50  0000 L CNN
-F 1 "PowerOn" H 2850 4650 50  0000 L CNN
-F 2 "LEDs:LED_0805" V 2800 4700 50  0001 C CNN
-F 3 "~" V 2800 4700 50  0001 C CNN
-	1    2800 4700
-	0    1    1    0   
+P 6350 7200
+F 0 "D7" H 6200 7150 50  0000 L CNN
+F 1 "PowerOn" H 6400 7150 50  0000 L CNN
+F 2 "LEDs:LED_0805" V 6350 7200 50  0001 C CNN
+F 3 "~" V 6350 7200 50  0001 C CNN
+	1    6350 7200
+	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:LED_Small D8
 U 1 1 5E7BA0BA
-P 2900 4700
-F 0 "D8" H 2750 4650 50  0000 L CNN
-F 1 "Debug" H 2950 4650 50  0000 L CNN
-F 2 "LEDs:LED_0805" V 2900 4700 50  0001 C CNN
-F 3 "~" V 2900 4700 50  0001 C CNN
-	1    2900 4700
-	0    1    1    0   
+P 6200 7200
+F 0 "D8" H 6050 7150 50  0000 L CNN
+F 1 "Debug" H 6250 7150 50  0000 L CNN
+F 2 "LEDs:LED_0805" V 6200 7200 50  0001 C CNN
+F 3 "~" V 6200 7200 50  0001 C CNN
+	1    6200 7200
+	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R_Small_US R19
 U 1 1 5E7BA33F
-P 2800 4350
-F 0 "R19" V 2750 4250 50  0000 C CNN
-F 1 "2k" V 2750 4450 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" H 2800 4350 50  0001 C CNN
-F 3 "~" H 2800 4350 50  0001 C CNN
-	1    2800 4350
+P 6350 7550
+F 0 "R19" V 6300 7450 50  0000 C CNN
+F 1 "2k" V 6300 7650 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" H 6350 7550 50  0001 C CNN
+F 3 "~" H 6350 7550 50  0001 C CNN
+	1    6350 7550
 	-1   0    0    1   
 $EndComp
 $Comp
 L Device:R_Small_US R20
 U 1 1 5E7BA5D8
-P 2900 4350
-F 0 "R20" V 2850 4250 50  0000 C CNN
-F 1 "2k" V 2850 4450 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" H 2900 4350 50  0001 C CNN
-F 3 "~" H 2900 4350 50  0001 C CNN
-	1    2900 4350
+P 6200 7550
+F 0 "R20" V 6150 7450 50  0000 C CNN
+F 1 "2k" V 6150 7650 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" H 6200 7550 50  0001 C CNN
+F 3 "~" H 6200 7550 50  0001 C CNN
+	1    6200 7550
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	3050 4200 2900 4200
-Wire Wire Line
-	2700 4200 2700 4250
-Connection ~ 3050 4200
-Wire Wire Line
-	3050 4200 3050 4400
-Wire Wire Line
-	2800 4250 2800 4200
-Connection ~ 2800 4200
-Wire Wire Line
-	2800 4200 2700 4200
-Wire Wire Line
-	2900 4250 2900 4200
-Connection ~ 2900 4200
-Wire Wire Line
-	2900 4200 2800 4200
-Wire Wire Line
-	2700 4450 2700 4600
-Wire Wire Line
-	2800 4600 2800 4450
-Wire Wire Line
-	2900 4450 2900 4600
-Wire Wire Line
-	2700 5250 2700 4800
-Wire Wire Line
-	2700 5250 3200 5250
-Wire Wire Line
-	3200 5150 2800 5150
-Wire Wire Line
-	2800 5150 2800 4800
-Wire Wire Line
-	2900 4800 2900 5050
-Wire Wire Line
-	2900 5050 3200 5050
 $Comp
 L Device:R_Small_US R9
 U 1 1 5E80E918
@@ -984,8 +918,6 @@ F 3 "~" H 3400 4300 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3400 4400 3400 4300
-Wire Wire Line
-	3050 3900 3050 4200
 Wire Wire Line
 	3050 3900 3400 3900
 Connection ~ 3050 3900
@@ -1411,44 +1343,34 @@ NoConn ~ 8350 1800
 NoConn ~ 8350 1900
 NoConn ~ 8350 2000
 NoConn ~ 8350 2100
-Text GLabel 6700 5500 2    50   Input ~ 0
+Text GLabel 6600 5000 2    50   Input ~ 0
 USB_RESET
 $Comp
 L Device:R_Small_US R26
 U 1 1 5EC53B8A
-P 6500 5600
-F 0 "R26" V 6450 5500 50  0000 C CNN
-F 1 "1M" V 6450 5700 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" H 6500 5600 50  0001 C CNN
-F 3 "~" H 6500 5600 50  0001 C CNN
-	1    6500 5600
+P 6500 5200
+F 0 "R26" V 6450 5100 50  0000 C CNN
+F 1 "1M" V 6450 5300 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" H 6500 5200 50  0001 C CNN
+F 3 "~" H 6500 5200 50  0001 C CNN
+	1    6500 5200
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	5600 5500 6500 5500
-Wire Wire Line
-	6700 5500 6500 5500
-Connection ~ 6500 5500
 $Comp
 L power:GND #PWR038
 U 1 1 5EC70DF4
-P 6500 5750
-F 0 "#PWR038" H 6500 5500 50  0001 C CNN
-F 1 "GND" H 6505 5577 50  0000 C CNN
-F 2 "" H 6500 5750 50  0001 C CNN
-F 3 "" H 6500 5750 50  0001 C CNN
-	1    6500 5750
+P 6500 5400
+F 0 "#PWR038" H 6500 5150 50  0001 C CNN
+F 1 "GND" H 6505 5227 50  0000 C CNN
+F 2 "" H 6500 5400 50  0001 C CNN
+F 3 "" H 6500 5400 50  0001 C CNN
+	1    6500 5400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6500 5700 6500 5750
 NoConn ~ 3200 6300
 NoConn ~ 3200 6400
 NoConn ~ 3200 6700
 NoConn ~ 3200 6800
-NoConn ~ 3200 4950
-Wire Wire Line
-	2800 6000 2650 6000
 Text HLabel 1600 4700 0    50   Output ~ 0
 PI_PWR_DOWN
 Text GLabel 1800 4700 2    50   Input ~ 0
@@ -1466,7 +1388,7 @@ F 3 "~" H 4050 1750 50  0001 C CNN
 	1    4050 1550
 	-1   0    0    1   
 $EndComp
-Text GLabel 5800 5600 2    50   Output ~ 0
+Text GLabel 5800 5300 2    50   Output ~ 0
 PI_SHUTDOWN
 Wire Wire Line
 	5600 5600 5800 5600
@@ -1583,7 +1505,7 @@ Wire Wire Line
 Wire Wire Line
 	3000 1750 3000 1650
 Connection ~ 3000 1650
-Text GLabel 5800 5700 2    50   Input ~ 0
+Text GLabel 5800 5200 2    50   Input ~ 0
 IS_PWR_DWN
 Wire Wire Line
 	5600 5700 5800 5700
@@ -1809,4 +1731,103 @@ F 3 "~" H 5450 2900 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	10750 1750 10750 2000
+$Comp
+L Connector_Generic:Conn_01x04 J5
+U 1 1 5F2488AF
+P 4950 1000
+F 0 "J5" H 4868 575 50  0000 C CNN
+F 1 "PI_USB0" H 4868 666 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch1.00mm" H 4950 1000 50  0001 C CNN
+F 3 "~" H 4950 1000 50  0001 C CNN
+	1    4950 1000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5150 900  6350 900 
+Wire Wire Line
+	6350 900  6350 800 
+Connection ~ 6350 800 
+Wire Wire Line
+	6350 800  6550 800 
+Wire Wire Line
+	5150 1000 6350 1000
+Wire Wire Line
+	6350 1000 6350 1150
+Connection ~ 6350 1150
+Wire Wire Line
+	6350 1150 6300 1150
+$Comp
+L power:GND #PWR029
+U 1 1 5F26AD49
+P 5450 1300
+F 0 "#PWR029" H 5450 1050 50  0001 C CNN
+F 1 "GND" V 5455 1172 50  0000 R CNN
+F 2 "" H 5450 1300 50  0001 C CNN
+F 3 "" H 5450 1300 50  0001 C CNN
+	1    5450 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 1100 5450 1100
+Wire Wire Line
+	5450 1100 5450 1300
+NoConn ~ 5150 800 
+Wire Wire Line
+	3050 3900 3050 4400
+Wire Wire Line
+	5800 5500 5600 5500
+NoConn ~ 5600 5100
+Wire Wire Line
+	5600 5000 6500 5000
+Wire Wire Line
+	6500 5100 6500 5000
+Connection ~ 6500 5000
+Wire Wire Line
+	6500 5000 6600 5000
+Wire Wire Line
+	6500 5400 6500 5300
+Wire Wire Line
+	6500 6600 6500 7100
+Wire Wire Line
+	5600 6600 6500 6600
+Wire Wire Line
+	6350 6700 6350 7100
+Wire Wire Line
+	5600 6700 6350 6700
+Wire Wire Line
+	6200 6800 6200 7100
+Wire Wire Line
+	5600 6800 6200 6800
+Wire Wire Line
+	6200 7300 6200 7450
+Wire Wire Line
+	6350 7300 6350 7450
+Wire Wire Line
+	6500 7300 6500 7450
+$Comp
+L power:GND #PWR0138
+U 1 1 5F6E5257
+P 5850 7700
+F 0 "#PWR0138" H 5850 7450 50  0001 C CNN
+F 1 "GND" H 5855 7527 50  0000 C CNN
+F 2 "" H 5850 7700 50  0001 C CNN
+F 3 "" H 5850 7700 50  0001 C CNN
+	1    5850 7700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5850 7700 6200 7700
+Wire Wire Line
+	6500 7700 6500 7650
+Wire Wire Line
+	6350 7650 6350 7700
+Connection ~ 6350 7700
+Wire Wire Line
+	6350 7700 6500 7700
+Wire Wire Line
+	6200 7650 6200 7700
+Connection ~ 6200 7700
+Wire Wire Line
+	6200 7700 6350 7700
+NoConn ~ 3200 5800
 $EndSCHEMATC
